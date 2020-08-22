@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" href="favicon.ico" />
+    <meta
+      property="og:image"
+      content="https://raw.githubusercontent.com/liamzzz0714/AudioApp/gh-pages/audioApp.png"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Audio App</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Noto+Sans+TC|Open+Sans|Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+    /> -->
+  </head>
+  <body>
+    <div id="root"></div>
+    <script>
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker.register("/AudioApp/service-worker.js");
+      }
+    </script>
+  <script type="text/javascript" src="/AudioApp/bundle.js"></script></body>
+</html>
